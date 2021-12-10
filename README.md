@@ -18,7 +18,9 @@ As the basic Tensorflow model is heavy , the model was converted to a light weig
 https://github.com/HSubbu/flower_classification_project/blob/main/convert.py
 *It is noted that i created a virtual environment in my local machine using conda (called tensorlfow-cpu) and all dependencies were installed inside the VE*. 
 
-To deploy the model , a python library *streamlit* was used . A complete python script streamlit_app.py which included the GUI for the web service and prediction of flower name using the model.predict() method on the user image. The same was tested on local machine using the command *$streamlit run streamlit_app.py*. The web service was designed to give the user option of loading the image from file or provide image url for prediction. 
+To deploy the model , a python library *streamlit* was used .
+https://github.com/HSubbu/flower_classification_project/blob/main/streamlit_app.py
+A complete python script streamlit_app.py which included the GUI for the web service and prediction of flower name using the model.predict() method on the user image. The same was tested on local machine using the command *$streamlit run streamlit_app.py*. The web service was designed to give the user option of loading the image from file or provide image url for prediction. 
 
 Subsequently, the web service was containerized using Docker and tested on local machine. The Dockerfile contains the requisite code for creating the image.
 https://github.com/HSubbu/flower_classification_project/blob/main/Dockerfile 
