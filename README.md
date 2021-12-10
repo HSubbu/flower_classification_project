@@ -15,9 +15,14 @@ https://github.com/HSubbu/flower_classification_project/blob/main/flower_predict
 *The Data preprocessing* involved unzipping the main data folder,  splitting the train data into a validation dataset following similar structure of train data (images are in 5 files with folder names as respective flower names) using 20% of train data for validation . The datset also provided test data and model was tested using the test data and then evaluating on dphi website(based on accuracy score).Transfer Learning methodology for model building was used and a MobileNetV2 was used as shortlisted model. The final model gave an accuracy of 90% on test data. The final model was saved for further development process. A train.py (https://github.com/HSubbu/flower_classification_project/blob/main/train.py)was also prepared from the colab notebook and is available in the repository for further training in case of upgrade (due to model drift or retraining with additional data).
 
 As the basic Tensorflow model is heavy , the model was converted to a light weight tensorflow lite model using convert.py script.
-https://github.com/HSubbu/flower_classification_project/blob/main/convert.py
+https://github.com/HSubbu/flower_classification_project/blob/main/convert.p
 *It is noted that i created a virtual environment in my local machine using conda (called tensorlfow-cpu) and all dependencies were installed inside the VE*. I create a requirements.txt with all dependencies using cmd $pipreqs <project dir> https://github.com/HSubbu/flower_classification_project/blob/main/requirements.txt
 
+I have used python version Python 3.7.11 . In addition, for testing the code , you may have to install tflite from 
+pip3 install --extra-index-url https://google-coral.github.io/py-repo/ tflite_runtime
+    
+while working on the code ,  (1) create and activate a virtual environment (2) run pip install -r requirements.txt to build an isolated development environment with the needed packages.
+    
 To deploy the model , a python library *streamlit* was used .
 https://github.com/HSubbu/flower_classification_project/blob/main/streamlit_app.py
 A complete python script streamlit_app.py which included the GUI for the web service and prediction of flower name using the model.predict() method on the user image. The same was tested on local machine using the command *$streamlit run streamlit_app.py*. The web service was designed to give the user option of loading the image from file or provide image url for prediction. 
