@@ -27,7 +27,8 @@ The repository also contains text document containing screen shots important asp
 
 (b) for testing the code following steps may be taken: 
 
-    (i) clone the project repo to your local machine reference https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+    (i) clone the project repo to your local machine 
+    (reference https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
     
     (ii) open the Dockerfile and make changes to PORT setting as indicated in the comments of Dockerfile
     
