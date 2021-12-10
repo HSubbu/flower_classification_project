@@ -21,6 +21,7 @@ https://github.com/HSubbu/flower_classification_project/blob/main/convert.py
 To deploy the model , a python library *streamlit* was used . A complete python script streamlit_app.py which included the GUI for the web service and prediction of flower name using the model.predict() method on the user image. The same was tested on local machine using the command *$streamlit run streamlit_app.py*. The web service was designed to give the user option of loading the image from file or provide image url for prediction. 
 
 Subsequently, the web service was containerized using Docker and tested on local machine. The Dockerfile contains the requisite code for creating the image.
+https://github.com/HSubbu/flower_classification_project/blob/main/Dockerfile 
 The Docker container was deployed on Heroku ( a limited free service!) and is available  at https://project2-mlzoomcamp.herokuapp.com/ . 
 The repository also contains text document containing screen shots important aspects of model development and deployment.
 
