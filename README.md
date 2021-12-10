@@ -30,6 +30,7 @@ The repository also contains text document containing screen shots important asp
 ### Testing
 
 (a) The webservice can be tested at https://project2-mlzoomcamp.herokuapp.com/ . The user can upload and image or provide link (sample images and a text doc with URL links has been provided in repo for easy testing ) . 
+https://github.com/HSubbu/flower_classification_project/blob/main/note.txt
 
 (b) for testing the code following steps may be taken: 
 
