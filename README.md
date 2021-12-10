@@ -24,11 +24,17 @@ The repository also contains text document containing screen shots important asp
 ### Testing
 
 (a) The webservice can be tested at https://project2-mlzoomcamp.herokuapp.com/ . The user can upload and image or provide link (sample images and a text doc with URL links has been provided in repo for easy testing ) . 
+
 (b) for testing the code following steps may be taken: 
+
     (i) clone the project repo to your local machine reference https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
-    (ii) open the Dockerfile and make changes to PORT setting as indicated in the comments of Dockerfilw
+    
+    (ii) open the Dockerfile and make changes to PORT setting as indicated in the comments of Dockerfile
+    
     (iii) build the image , $docker build -t streamlit_app .
+    
     (iv) once the image is build sucessfully , run $docker run -it --rm -p 8501:8501 streamlit_app
+    
     (v) open localhost:/8501 and this will open the application and can be tested using the images and URL provided in the folder
     
 
