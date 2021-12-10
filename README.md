@@ -14,7 +14,9 @@ The colab notebook comprises of code in prepreocessing the data , developing a m
 https://github.com/HSubbu/flower_classification_project/blob/main/flower_prediction_.ipynb
 *The Data preprocessing* involved unzipping the main data folder,  splitting the train data into a validation dataset following similar structure of train data (images are in 5 files with folder names as respective flower names) using 20% of train data for validation . The datset also provided test data and model was tested using the test data and then evaluating on dphi website(based on accuracy score).Transfer Learning methodology for model building was used and a MobileNetV2 was used as shortlisted model. The final model gave an accuracy of 90% on test data. The final model was saved for further development process. A train.py was also prepared from the colab notebook and is available in the repository for further training in case of upgrade (due to model drift or retraining with additional data).
 
-As the basic Tensorflow model is heavy , the model was converted to a light weight tensorflow lite model using convert.py script. *It is noted that i created a virtual environment in my local machine using conda (called tensorlfow-cpu) and all dependencies were installed inside the VE*. 
+As the basic Tensorflow model is heavy , the model was converted to a light weight tensorflow lite model using convert.py script.
+https://github.com/HSubbu/flower_classification_project/blob/main/convert.py
+*It is noted that i created a virtual environment in my local machine using conda (called tensorlfow-cpu) and all dependencies were installed inside the VE*. 
 
 To deploy the model , a python library *streamlit* was used . A complete python script streamlit_app.py which included the GUI for the web service and prediction of flower name using the model.predict() method on the user image. The same was tested on local machine using the command *$streamlit run streamlit_app.py*. The web service was designed to give the user option of loading the image from file or provide image url for prediction. 
 
