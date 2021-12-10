@@ -3,11 +3,11 @@
 ![image](https://user-images.githubusercontent.com/30765337/145608887-ee56500a-91e9-4640-be5f-d7df482edac6.png)
 
 
-##Project Description
+### Project Description
 The problem has been attempted from folllowing practice datathon https://dphi.tech/challenges/data-sprint-25-flower-recognition/61/overview/about
 The problem statement in concise words is to to develop and deploy a ML model which can identify name of the flower from the image and classify into one of the five classes.The classes are - daisy, dandelion, roses, sunflowers and tulips. 
 
-## Brief Description of Project Lifecycle and Project Repository
+### Brief Description of Project Lifecycle and Project Repository
 The dataset contains raw jpeg images of five types of flowers.The dataset can be downloaded from the given link: https://drive.google.com/file/d/1H0rJmSBmYQoWM2w2tqy-jmX0Y2Wg6k2v/view?usp=sharing. 
 
 The colab notebook comprises of code in prepreocessing the data , developing a model using python Tensorflow and saving the best model .
@@ -21,7 +21,7 @@ Subsequently, the web service was containerized using Docker and tested on local
 The Docker container was deployed on Heroku ( a limited free service!) and is available  at https://project2-mlzoomcamp.herokuapp.com/ . 
 The repository also contains text document containing screen shots important aspects of model development and deployment.
 
-###Testing
+### Testing
 
 (a) The webservice can be tested at https://project2-mlzoomcamp.herokuapp.com/ . The user can upload and image or provide link (sample images and a text doc with URL links has been provided in repo for easy testing ) . 
 (b) for testing the code following steps may be taken: 
@@ -32,6 +32,6 @@ The repository also contains text document containing screen shots important asp
     (v) open localhost:/8501 and this will open the application and can be tested using the images and URL provided in the folder
     
 
-###Conclusion
+### Conclusion
 
 The design and deployment of webservice **flower_classification_project** was undertaken as a part of Capstone Project for Course in ML with DataTalksClub https://datatalks.club/courses/2021-winter-ml-zoomcamp.html . The model documentation to be uploaded with webs service also needs revision. It is envisaged that further improvement to model performance and presentation of application can be undertaken in due course for next version of application.
