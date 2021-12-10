@@ -25,7 +25,7 @@ A complete python script streamlit_app.py which included the GUI for the web ser
 Subsequently, the web service was containerized using Docker and tested on local machine. The Dockerfile contains the requisite code for creating the image.
 https://github.com/HSubbu/flower_classification_project/blob/main/Dockerfile 
 The Docker container was deployed on Heroku ( a limited free service!) and is available  at https://project2-mlzoomcamp.herokuapp.com/ . 
-The repository also contains text document containing screen shots important aspects of model development and deployment.
+The repository also contains text document containing screen shots important aspects of model development and deployment. https://github.com/HSubbu/flower_classification_project/blob/main/streamlit_deployment_screenshots.docx
 
 ### Testing
 
