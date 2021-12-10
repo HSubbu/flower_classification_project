@@ -16,7 +16,7 @@ https://github.com/HSubbu/flower_classification_project/blob/main/flower_predict
 
 As the basic Tensorflow model is heavy , the model was converted to a light weight tensorflow lite model using convert.py script.
 https://github.com/HSubbu/flower_classification_project/blob/main/convert.py
-*It is noted that i created a virtual environment in my local machine using conda (called tensorlfow-cpu) and all dependencies were installed inside the VE*. 
+*It is noted that i created a virtual environment in my local machine using conda (called tensorlfow-cpu) and all dependencies were installed inside the VE*. I create a requirements.txt with all dependencies using cmd $pipreqs <project dir> 
 
 To deploy the model , a python library *streamlit* was used .
 https://github.com/HSubbu/flower_classification_project/blob/main/streamlit_app.py
