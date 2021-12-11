@@ -33,6 +33,13 @@ The Docker container was deployed on Heroku ( a limited free service!) and is av
 The repository also contains text document containing screen shots important aspects of model development and deployment. https://github.com/HSubbu/flower_classification_project/blob/main/streamlit_deployment_screenshots.docx
 
 ### Testing
+    
+I have pushed the image for the application into my docker-hub as a public repo. Easiest way to test this application is pull the image from my docker-hub and run a container from the image. 
+ 
+    $docker pull subbu0319/flower_classification_app
+    $ docker build -dit --rm -p 8501:8501 subbu0319/flower_classification_app
+ 
+  we can find the app running in http://localhost:8501/ and test by uploading and image or provide a URL.
 
 (a) The webservice can be tested at https://project2-mlzoomcamp.herokuapp.com/ . The user can upload and image or provide link (sample images and a text doc with URL links has been provided in repo for easy testing ) . 
 https://github.com/HSubbu/flower_classification_project/blob/main/note.txt
