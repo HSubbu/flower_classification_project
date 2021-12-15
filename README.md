@@ -18,6 +18,11 @@ As the basic Tensorflow model is heavy , the model was converted to a light weig
 https://github.com/HSubbu/flower_classification_project/blob/main/convert.p
 *It is noted that i created a virtual environment in my local machine using conda (called tensorlfow-cpu) and all dependencies were installed inside the VE*. I create a requirements.txt with all dependencies using cmd $pipreqs <project dir> https://github.com/HSubbu/flower_classification_project/blob/main/requirements.txt
 
+$ conda -V 
+$conda create -n yourenvname python=x.x anaconda
+$source activate yourenvname
+$source deactivate #deactivate after project
+
 I have used python version Python 3.7.11 . In addition, for testing the code , you may have to install tflite from 
 pip3 install --extra-index-url https://google-coral.github.io/py-repo/ tflite_runtime
     
